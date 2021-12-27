@@ -1,6 +1,6 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-#include<queue>
+#include <queue>
 #define n 20
 
 // class queue {
@@ -32,9 +32,8 @@ using namespace std;
 //             cout <<"queue is empty";
 //             return;
 //         }
-        
+
 //         front++;
-        
 
 //     }
 //     int peek(){
@@ -52,29 +51,27 @@ using namespace std;
 //     }
 // };
 
- int main (){
-    
-//     queue q;
-//     q.push(30);
-//     q.push(30);
-//     q.push(30);
-//     q.pop();
-//     cout<<q.peek()<<endl;
-//     q.pop();
+int main() {
+  //     queue q;
+  //     q.push(30);
+  //     q.push(30);
+  //     q.push(30);
+  //     q.pop();
+  //     cout<<q.peek()<<endl;
+  //     q.pop();
 
-//     cout<<q.peek()<<endl;
-//     q.pop();
-//     cout<<q.peek()<<endl;
-//     q.pop();
-    
- queue<int> q;
-    q.push(44);
-    q.push(12);
-    while(!q.empty()){
-    cout<<q.front();
+  //     cout<<q.peek()<<endl;
+  //     q.pop();
+  //     cout<<q.peek()<<endl;
+  //     q.pop();
+
+  queue<int> q;
+  q.push(44);
+  q.push(12);
+  while (!q.empty()) {
+    cout << q.front();
     q.pop();
- }
-    
-    return 0;
+  }
 
+  return 0;
 }

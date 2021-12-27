@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<iostream>
 using namespace std;
 #include<climits>
 #include <stack>
@@ -46,7 +45,7 @@ double arr1[30][2]={};
 int t=0 ;
 int curves =2;
 for (int c=0; c< curves; c++){
-	double requiredpoints = 10;
+	double requiredpoints = 19;
  	double gamma = 1/requiredpoints;
 
 	for (int i = 0 ; i<requiredpoints; i++) {
