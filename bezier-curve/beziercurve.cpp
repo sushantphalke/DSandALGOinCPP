@@ -45,7 +45,7 @@ double arr1[30][2]={};
 int t=0 ;
 int curves =2;
 for (int c=0; c< curves; c++){
-	double requiredpoints = 19;
+	double requiredpoints = 25;
  	double gamma = 1/requiredpoints;
 
 	for (int i = 0 ; i<requiredpoints; i++) {
