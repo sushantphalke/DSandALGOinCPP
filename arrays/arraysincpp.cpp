@@ -178,6 +178,7 @@ int main(){
                 cout<<arr[i]<<" ,";
             }
             counter = 1;
+            
         while(counter<in){
             for (int i =0;i<in-counter;i++){
                 if(arr[i]>arr[i+1]){
