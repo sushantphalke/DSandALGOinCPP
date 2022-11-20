@@ -18,3 +18,4 @@ int main() {
   
   return 0;
 }
+// time complexity of Euclidean gcd algorithm is O(log(n*m)) i.e. O(logn+logm)
