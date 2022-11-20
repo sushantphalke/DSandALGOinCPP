@@ -316,7 +316,7 @@ node* intersect(node*&head1, node*&head2, int pos){
     pos--;
     while (pos--){
         temp1 = temp1->next;
-
+ 
     }
     node* temp2 = head2;
     while(temp2->next!=NULL){

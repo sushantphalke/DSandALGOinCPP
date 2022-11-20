@@ -27,14 +27,15 @@ int main() {
   cout << "---------------";
 
   vector<int>::iterator iter = vec1.begin();
-  //   vec1.insert(iter, 34, 33);
-  //   printVector(vec1);
-  //   cout << "---------------";
-  vec1.insert(iter + 1, 34, 33);
-  printVector(vec1);
-  cout << "---------------";
+    vec1.insert(iter, 34, 33);
+    printVector(vec1);
+    cout << "---------------";
+//   vec1.insert(iter + 1, 34, 33);
+//   printVector(vec1);
+//   cout << "---------------";
 
   vector<int> vec2(3, 4); // three length array of 4s
+  vec2[2]++;
   printVector(vec2);
   cout << "---------------";
   return 0;

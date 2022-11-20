@@ -8,7 +8,8 @@ int main(){
     m1["louis"] =97;
     map<string,int> :: iterator iter;
     for(iter = m1.begin();iter!=m1.end();iter++){
-        cout<<(*iter).first<<"__"<<(*iter).second<<endl;
+        cout<<(m1.count("allen"))<<endl;
+
     }
     return 0;
 }
