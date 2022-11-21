@@ -25,6 +25,7 @@ int gcd(int n1, int n2) {
 //   }
 //   return 1;
 // }
+
 int main() {
   int n1 = 42, n2 = 49;
   cout << gcd(n1, n2);
