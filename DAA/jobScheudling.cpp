@@ -42,7 +42,7 @@ void printJobScheduling(Job arr[], int n) {
 
 int main() {
   Job arr[] = {{'a', 2, 100},
-               {'b', 1, 19},
+               {'b', 1, 69},
                {'c', 2, 27},
                {'d', 1, 25},
                {'e', 3, 15}};
@@ -54,4 +54,7 @@ int main() {
   printJobScheduling(arr, n);
   return 0;
 }
+
 // time complexity of job scheduling algorithm is O(N^2) and auxilary space is O(N)
+
+

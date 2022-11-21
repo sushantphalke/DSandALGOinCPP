@@ -2,7 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int max(int a, int b) { return (a > b) ? a : b; }
 
 int knapSack(int W, int wt[], int val[], int n) {
   if (n == 0 || W == 0)
@@ -15,7 +14,7 @@ int knapSack(int W, int wt[], int val[], int n) {
     return max(val[n - 1] + knapSack(W - wt[n - 1], wt, val, n - 1), knapSack(W, wt, val, n - 1));
 }
 
-// Driver code
+
 int main() {
   int val[] = {60, 100, 120};
   int wt[] = {10, 20, 30};
@@ -25,4 +24,4 @@ int main() {
   return 0;
 }
 
-// Time complexity of KnapSack Problem is O(2^n)
+// Time complexity of KnapSack Problem is O(2^n) or O(n*w)
