@@ -22,3 +22,5 @@ int main() {
   cout << "no of subarrays : " << counter;
   return 0;
 }
+
+// time complexity of tower of hanoi problem is O(2^N) 
