@@ -6,7 +6,7 @@ int main() {
   int n1 = 0, n2 = 1, n3, i, number;
   cout << "Enter the number of elements: ";
   cin >> number;
-   cout << "Fibonacci Series: ";
+  cout << "Fibonacci Series: ";
   cout << n1 << " " << n2 << " ";
 
   for (i = 2; i < number; ++i) {
