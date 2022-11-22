@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <iostream>
 using namespace std;
-
+// Job
 struct Job {
   char id;
   int dead;
