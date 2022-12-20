@@ -1,14 +1,10 @@
-#include<iostream> 
+#include <bits/stdc++.h>
 using namespace std;
-   
-int x;  // Global x
-   
-int main()
-{
-  
-  int x = 10; // Local x
-  cout << "Value of global x is " << ::x;
-  cout << "\nValue of local x is " << x;  
-  return 0;
-
+int main() {
+  int s, v;
+  cin >> s >> v;
+  s = s + v;
+  v = s - v;
+  s = s - v;
+  cout << "swappped numbers: s =" << s << ", v=" << v;
 }
