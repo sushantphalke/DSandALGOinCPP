@@ -41,7 +41,7 @@ using namespace std;
 //             cout<<"queue is empty";
 //             return -1 ;
 //         }
-//         return arr[front];
+//         return arr[front]; 
 //     }
 //     bool empty(){
 //         if (front==-1 || front >back){
@@ -72,6 +72,6 @@ int main() {
     cout << q.front();
     q.pop();
   }
-
+// chintanwar
   return 0;
 }

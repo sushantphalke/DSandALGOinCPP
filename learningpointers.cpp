@@ -6,7 +6,7 @@ void increment(int pointVar){
 };
 int main() {
     int var = 5;
-    int* pointVar;
+    int* pointVar = &var;
      
 
     // store address of var
@@ -37,12 +37,14 @@ int main() {
     *pointVar = 16;
 
     // print var
-    cout << "var = " << &var << endl;
+    cout << "var = " << var << endl;
+    cout << "&var16 = " << &var << endl;
 
     cout << "*pointVar = " << *pointVar << endl;
     *pointVar = 34;
 
     cout << "var : " << var << endl;
+    cout << "&var34 : " << &var << endl;
     cout << "*pointVar = "<< *pointVar << endl;
     cout << "*pointVar = "<< &*pointVar << endl;
     
