@@ -34,7 +34,7 @@ void fib(vector<int>& v, int n) {
 
 int main() {
   int n;
-  cout<<"Enter number: ";
+  cout << "Enter number: ";
   cin >> n;
   vector<int> v;
   v.push_back(0);
