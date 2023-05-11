@@ -1,0 +1,37 @@
+#include <algorithm>
+#include<bits/stdc++.h>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+string ans(int num){
+      string str="";
+	  int temp=num;
+	  if(num<=26){
+		  char C='A'+(num-1);
+		  str+=C;
+		  return str;
+	  }
+
+	  while(temp>26){
+		  int mod=temp%26;
+		  char C='A'+(mod-1);
+		     str+=C;
+			 temp/=26;
+	  }
+
+	  char C='A'+(temp-1);
+	  str+=C;
+ reverse(str.begin(),str.end());
+
+return str;
+}
+
+int main() {
+	int n;
+	cin>>n;
+	cout<<ans(n);
+
+	return 0;
+}

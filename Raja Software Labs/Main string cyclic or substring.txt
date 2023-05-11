@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int Check_Cyclic(string str1,string str2){
+  
+  int index=0;  // substring varification
+  int i=0;   // trav string main string
+  
+  for(;i<str1.size();i++){   //traverse str1 trough loop
+     if(index==str2.size())   // edge case or vefrifies that substring is found
+          break;
+    if(str2[index]==str1[i])  // inc 2nd pointer for check next char in substring
+        ++index;
+        else{
+            if(index>0)  // i also inc by index 
+                            // abcabc
+                            // a a b
+                            //i=7 8  9 10 index=1 2 3
+           i-=index;
+           
+           index=0;    
+        }
+        
+  }
+  
+  return index<str2.size()?-1: i-index;
+  
+}
+
+
+int main(){
+    
+   
+   string str1="abcdbcdaababa";
+   string str2="aab";
+   
+   cout<<Check_Cyclic(str1,str2);
+    
+    
+   
+    
+  
+  
+  
+    
+    return 0;
+}

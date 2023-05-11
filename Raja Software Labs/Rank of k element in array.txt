@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+
+using namespace std;
+
+int  solution(vector<int>arr,int k){
+  
+ int count=0;
+ 
+ for(int index=0;index<arr.size()-1;++index){
+     if(arr[index]!=k && arr[index]!=arr[index+1])
+       ++count;
+       else if(arr[index]==k){
+           ++count;
+           break;
+       }
+         
+ }
+ 
+ return count;
+ 
+}
+
+int main()
+{
+    vector<int>arr{10,10,10,9,9,9,8,7,3};
+    cout<<solution(arr,3);
+
+    return 0;
+}

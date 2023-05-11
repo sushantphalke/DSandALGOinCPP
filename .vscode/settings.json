@@ -16,7 +16,8 @@
         "vector": "cpp",
         "deque": "cpp",
         "forward_list": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "thread": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

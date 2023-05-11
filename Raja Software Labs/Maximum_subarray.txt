@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int max(int x,int y){
+    return (x>y?x:y);
+}
+int Maximum_subarray(vector<int>arr){
+   vector<int>curr_ans;
+   
+    int curr_sum=arr[0];
+    int max_sum=0;
+    curr_ans.push_back(arr[0]);
+    vector<int>max_ans;
+
+    for(int i=1;i<arr.size();i++){
+        if(curr_sum<arr[i]){
+            curr_ans.clear();
+             curr_sum=arr[i];
+             curr_ans.push_back(arr[i]);
+             
+        }
+         else{
+            curr_sum+=arr[i];
+            curr_ans.push_back(arr[i]);
+         }
+
+      if(curr_sum>max_sum){
+          max_sum=curr_sum;
+        max_ans=curr_ans;
+          
+      }  
+       
+    
+    }
+    for(int i=0;i<max_ans.size();i++)
+      cout<<max_ans[i]<<" ";
+      cout<<endl;
+    return max_sum;
+}
+
+int main(){
+
+vector<int>v{4,3,-2,6,-14,7,-1,4,5,7,-10,2,9,-10,-5,-9,6,1};
+
+    cout<<Maximum_subarray(v);
+    return 0;
+}

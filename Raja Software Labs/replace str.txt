@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void replaceSpaces(string &str)
+{
+    int space_count=0;
+    int i;
+    
+    
+    cout<<str<<endl;
+    for(i=0;i<str.size();i++){
+        if(str[i]==' ')
+           ++space_count;
+    }
+    
+    cout<<str<<endl;
+    int new_len=i+1+space_count*2;
+    str.resize(new_len);
+    int n=str.size();
+    
+    int index=new_len-1;
+    str[index--]='\0';
+    
+    
+    for(int j=i-1;j>=0;j--){
+        if(str[j]==' ')
+           {
+               str[index]='0';
+               str[index-1]='2';
+               str[index-2]='%';
+               index-=3;
+           }else
+             {
+                 str[index]=str[j];
+                 --index;
+             }
+    }
+    
+}
+
+
+int main(){
+    
+    string str="I am Akshay Darade";
+    cout<<str<<endl;
+    
+    replaceSpaces(str);
+    cout<<str;
+    return 0;
+}

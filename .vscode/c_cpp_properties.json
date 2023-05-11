@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             "cStandard": "gnu17",
-            "cppStandard": "gnu++14",
+            "cppStandard": "gnu++17",
             "intelliSenseMode": "windows-gcc-x86",
             "compilerPath": "C:/Program Files/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe"
         }

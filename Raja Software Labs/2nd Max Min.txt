@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int sol1(vector<int>arr){
+    int f=INT_MIN;
+    int s=INT_MIN;
+    
+    for(int i=0;i<arr.size();i++){
+        if(arr[i]>s){
+            if(arr[i]>f){
+                s=f;
+                f=arr[i];
+            }else
+               s=arr[i];
+        }
+    }
+    
+    return s;
+}
+
+
+int sol2(vector<int>arr){
+    int f=INT_MAX;
+    int s=INT_MAX;
+    
+    
+    for(int i=0;i<arr.size();i++){
+        if(arr[i]<s){
+            if(arr[i]<f){
+                s=f;
+                f=arr[i];
+            }else
+              s=arr[i];
+        }
+    }
+   return s; 
+}
+
+
+int main(){
+    
+    vector<int>v{1,3,2,5,7,6,8};
+    
+    
+    cout<<sol1(v)<<endl;;
+    cout<<sol2(v)<<endl;;
+    
+    
+    return 0;
+}
