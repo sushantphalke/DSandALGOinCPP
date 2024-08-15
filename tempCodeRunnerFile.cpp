@@ -1,1 +1,0 @@
-stack<int> st;

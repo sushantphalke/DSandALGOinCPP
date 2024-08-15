@@ -20,7 +20,10 @@ void downloadFile(const string& filename) {
 
   // Simulate progress update
   lock_guard<mutex> lock(mtx);
-  cout << "Downloaded: " << filename << endl;
+   time_t now = time(0);
+   char* dt  = ctime(&now);
+   cout << "Downloaded: "<<filename<<endl<<"Time :"<<(dt)<<"\n";
+  // cout << "Downloaded: " << filename << endl;
 }
 
 // Downloader thread function
